@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+content="width=device-width, initial-scale=1.0"/>
+    <title>Israel multi-Billion Dollar Pet store</title>
+    <link rel="stylesheet"href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <header>
+        <div class="logo">Israel Multi-Billion Dollar Pet store</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home_</a></li>
+                <li><a href="#">Pets_</a></li>
+                <li><a href="#">Accessories_</a></li>
+                <li><a href="#">Contact_</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="products">
+    <div class="hero-content">
+        <h1>Find Your Furry Friend Today</h1>
+        <p>Healthy, happy pets ready for a new home! </p>
+        <button onclick="show message()">Shop Now</button>
+    </div>
+</section>
+<Section class="contact">
+    <h2>Contact Us</h2>
+    <form action="/contact" method="POST">
+        <input type="text" name="name"
+        placeholder="Your name"required>
+        <textarea name="message"placeholder="Your message"required></textarea>
+        <buuton type="submit">send</button>
+        </form>
+    </section>
+
+<section class="products">
+    <h2>Our Pets</h2>
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="{{url_for('static', filename='images/dog.jfif')}}"alt="Dog"/>
+            <h3>Labrador</h3>
+            <p>$450</P>
+             <button onclick="addToCart('Labrador')">Add to carts"</button>
+         </div>
+         <div class="product-card">
+            <img src="{{url_for('static',filename='images/bird.jpg')}}"alt="Bird"/>
+            <h3>Parakeet</h3>
+            <p>$60</p>
+            <button onclick="addToCart('Bird')">Add to carts</button>
+         </div>
+         <div class="product-card">
+            <img src-"image/rabbit.jpg"alt="Rabbit"/>
+            <h3>Holland Lop</h3>
+            <p>$120</p>
+            <button onclick="addToCart('Rabbit')">Add to Cart</button>
+         </div>
+        </div>
+ </section>
+
+ <footer>
+    <p>&copy;2025 Israel pet store</p>
+ </footer>
+ <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+                    
